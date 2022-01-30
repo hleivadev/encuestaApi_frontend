@@ -1,0 +1,17 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Email</th>
+        <th scope="col">Genero</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let encuesta of Encuestas; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{encuesta.email}}</td>
+        <td>{{encuesta.nameTipoMusica}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
