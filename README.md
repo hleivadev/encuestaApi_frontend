@@ -1,4 +1,8 @@
 # EncuestaApi
+1 instalar angular cli
+2 intalar node.js
+3 una vez descargado el proyecto ejecutar en el terminal npm install
+4 el puerto esta configurado en el default http://localhost:4200/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
