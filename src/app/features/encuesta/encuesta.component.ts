@@ -11,11 +11,16 @@ import { Encuesta } from 'src/app/model/encuesta';
 export class EncuestaComponent implements OnInit {
   
   public Encuestas : Encuesta[] = [];
+  public flag!: boolean;
 
   constructor(private encuestaService : EncuestaService) { }
 
   ngOnInit(): void {
     this.getEncuestas();
+    this.encuestaService.getValue().subscribe((value) => {
+      this.flag = value;
+    });
+    console.log("this.flag " + this.flag);
   }
 
   public getEncuestas():void{
@@ -29,5 +34,7 @@ export class EncuestaComponent implements OnInit {
       }
     );
   }
+
+
 
 }
